@@ -1,0 +1,63 @@
+<body style="background-color: black;">
+    <main style="width: 1024px; min-height: 100%; background-color: white;">
+        <script>
+            function setname(){
+                const username = document.getElementById("nameinput");
+                const name = username.value
+                document.getElementById("defaultuser").innerHTML = "<b>"+name+"</b>";
+            }
+            function setlike(){
+                const link = document.getElementById("linkinput");
+                const dalink = link.value
+                document.getElementById("ava").src = dalink
+            }
+        </script>
+        <link rel="stylesheet" href="style.css">
+
+        <div class="profile">
+            <img class="avatar" id="ava" src="img/avatar.jpg">
+            <span class="badge">1</span>
+            <div class="UserName">
+                <a href="https://www.facebook.com/AomWorachai/" id="defaultuser"><b>Worahcai Pikunkaew</b></a>
+            </div>
+
+            <div class="UserInput">
+                <p>Set the username</p>
+                <input id="nameinput" type="text">
+                <button onclick="setname()">set</button>
+            </div>
+            <br>
+            <div class="UserInput">
+                <p>Set the profile img link</p>
+                <input id="linkinput" type="text">
+                <button onclick="setlike()">set</button>
+            </div>
+            <br>
+    
+        </div>
+
+        
+
+        <div class="Gallery">
+            <div class="showimg" style="background-image: url(img/bluelobster.jpg);grid-column: span 2;"></div>
+            
+            <div class="showimg" style="background-image: url(img/daeodon.jpg);"></div>
+            
+            <div class="showimg" style="background-image: url(img/frog-jumping.gif);"></div>
+            
+            <div class="showimg" style="background-image: url(img/juan.webp); grid-column: span 2;"></div>
+            
+            <div class="showimg" style="background-image: url(img/milkeating.jpg);"></div>
+
+            <div class="showimg" style="background-image: url(img/monday.jpg);"></div>
+            
+            <div class="showimg" style="background-image: url(img/nineoutoften.gif);"></div>
+            
+            <div class="showimg" style="background-image: url(img/welivewelovewelie.jpg);"></div>
+            
+            <div class="showimg" style="background-image: url(img/kysn.jpg);"></div>
+            
+            <div class="showimg" style="background-image: url(img/images.jpg);"></div>
+        </div>
+    </main>
+</body>
